@@ -4,7 +4,7 @@ import dotenv from 'dotenv';
 import crudRoutes from './routes/Crud.js';
 import cors from 'cors';
 
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5003;
 dotenv.config();
 const app = express();
 
